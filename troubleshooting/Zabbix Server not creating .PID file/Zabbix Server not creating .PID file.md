@@ -8,9 +8,14 @@ systemctl stop zabbix-agent2.service
 ## Edite o systemd do zabbix:
 
 No systemd, os serviços são gerenciados por arquivos .service. Verifique o arquivo de configuração do serviço do Zabbix Agent, geralmente localizado em /lib/systemd/system/zabbix-agent.service ou /etc/systemd/system/zabbix-agent.service.
+
 ```bash
 sudo nano /lib/systemd/system/zabbix-agent2.service
 ```
+> /lib/systemd/system/zabbix-agent2.service para o Agent
+> /lib/systemd/system/zabbix-server.service para o Server
+> /lib/systemd/system/zabbix-proxy.service  para o Zabbix-Proxy
+
 ### Adicione o seguinte na seção service:
 ```text
 [Service]
