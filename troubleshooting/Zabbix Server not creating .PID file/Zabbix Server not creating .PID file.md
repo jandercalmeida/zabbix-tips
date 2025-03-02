@@ -1,14 +1,12 @@
-# Assegurando que o runtime do processo crie o arquivo pid
+## Assegurando que o runtime do processo crie o arquivo pid
 
-## Pare o serviço zabbix-agent ou zabbix-agent2
+### Pare o serviço zabbix-agent ou zabbix-agent2
 ```bash
 systemctl stop zabbix-agent2.service
 ```
 <br><br><br>
 
-
-## Edite o systemd do zabbix:
-
+### Edite o systemd do zabbix:
 No systemd, os serviços são gerenciados por arquivos .service. Verifique o arquivo de configuração do serviço do Zabbix Agent, geralmente localizado em /lib/systemd/system/zabbix-agent.service ou /etc/systemd/system/zabbix-agent.service.
 
 ```bash
@@ -17,19 +15,17 @@ sudo nano /lib/systemd/system/zabbix-agent2.service
 - 📌 **Agent:** `/lib/systemd/system/zabbix-agent2.service`
 - 📌 **Server:** `/lib/systemd/system/zabbix-server.service`
 - 📌 **Zabbix-Proxy:** `/lib/systemd/system/zabbix-proxy.service`
-<br><br><br>
+<br><br>
 
 
-
-### Adicione o seguinte na seção service:
+#### Adicione o seguinte na seção service:
 ```text
 [Service]
 RuntimeDirectory=zabbix
 ```
-<br><br><br>
+<br><br>
 
-### Atualize systemd com a nova configuração e inicie:
-
+#### Atualize systemd com a nova configuração e inicie:
 ```bash
 systemctl daemon-reload
 systemctl start zabbix-agent2.service
