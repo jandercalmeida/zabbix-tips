@@ -32,3 +32,5 @@ Agora, o usuário zabbix terá permissão para criar o PID file:
 * /run/zabbix/zabbix_agent2.pid para o Agent
 * /run/zabbix/zabbix_server.pid para o Server
 * /run/zabbix/zabbix_proxy.pid para o Zabbix-Proxy
+
+**Para mais informações, consulte o arquvo de configuração do Zabbix em /etc/zabbix/**
