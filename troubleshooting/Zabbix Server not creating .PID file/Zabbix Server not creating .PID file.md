@@ -15,8 +15,6 @@ sudo nano /lib/systemd/system/zabbix-agent2.service
 - 📌 **Agent:** `/lib/systemd/system/zabbix-agent2.service`
 - 📌 **Server:** `/lib/systemd/system/zabbix-server.service`
 - 📌 **Zabbix-Proxy:** `/lib/systemd/system/zabbix-proxy.service`
-<br>
-
 
 #### Adicione o seguinte na seção service:
 ```text
