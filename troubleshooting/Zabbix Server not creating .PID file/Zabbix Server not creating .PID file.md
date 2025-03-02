@@ -1,6 +1,8 @@
 ## Assegurando que o runtime do processo crie o arquivo pid
+_**Válido para Zabbix Agent, Proxy e Server
+**_
 
-### Pare o serviço zabbix-agent ou zabbix-agent2
+### Pare o serviço zabbix (zabbix-agent ou zabbix-agent2, ou zabbix-server, ou zabbix-proxy)
 ```bash
 systemctl stop zabbix-agent2.service
 ```
