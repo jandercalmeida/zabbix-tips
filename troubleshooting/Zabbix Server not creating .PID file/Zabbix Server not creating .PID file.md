@@ -12,11 +12,9 @@ No systemd, os serviços são gerenciados por arquivos .service. Verifique o arq
 ```bash
 sudo nano /lib/systemd/system/zabbix-agent2.service
 ```
-> /lib/systemd/system/zabbix-agent2.service para o Agent
-> 
-> /lib/systemd/system/zabbix-server.service para o Server
-> 
-> /lib/systemd/system/zabbix-proxy.service  para o Zabbix-Proxy
+📌 Agent: /lib/systemd/system/zabbix-agent2.service
+📌 Server: /lib/systemd/system/zabbix-server.service
+📌 Zabbix-Proxy: /lib/systemd/system/zabbix-proxy.service
 
 ### Adicione o seguinte na seção service:
 ```text
