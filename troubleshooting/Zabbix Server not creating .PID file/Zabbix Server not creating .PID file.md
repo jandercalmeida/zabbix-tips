@@ -4,7 +4,7 @@
 ```bash
 systemctl stop zabbix-agent2.service
 ```
-
+<br><br><br>
 
 
 ## Edite o systemd do zabbix:
@@ -17,7 +17,7 @@ sudo nano /lib/systemd/system/zabbix-agent2.service
 - 📌 **Agent:** `/lib/systemd/system/zabbix-agent2.service`
 - 📌 **Server:** `/lib/systemd/system/zabbix-server.service`
 - 📌 **Zabbix-Proxy:** `/lib/systemd/system/zabbix-proxy.service`
-
+<br><br><br>
 
 
 
@@ -26,6 +26,7 @@ sudo nano /lib/systemd/system/zabbix-agent2.service
 [Service]
 RuntimeDirectory=zabbix
 ```
+<br><br><br>
 
 ### Atualize systemd com a nova configuração e inicie:
 
