@@ -2,6 +2,11 @@
 _**Válido para Zabbix Agent, Proxy e Server
 **_
 
+Cansou de ficar criando o arquivo .pid do zabbix todas vez ao reiniciar o host?
+Siga as instruções e elimine o problema em difinitivo:
+
+<br>
+
 ### Pare o serviço zabbix (zabbix-agent ou zabbix-agent2, ou zabbix-server, ou zabbix-proxy)
 ```bash
 systemctl stop zabbix-agent2.service
