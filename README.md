@@ -7,7 +7,7 @@
 ✅ System and Database Configuration<br>
 ✅ Automation and Scripting<br>
 <p>
-
+<br>
 📌 🇧🇷 Zabbix Tips é uma coleção de dicas úteis, guias de solução de problemas e melhores práticas para gerenciar o Zabbix de forma eficiente. Inclui soluções para problemas comuns, ajustes de desempenho, configurações do sistema e scripts de automação.
 
 💡 Tópicos abordados:<p>
